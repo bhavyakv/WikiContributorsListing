@@ -6,7 +6,11 @@ Uses a web crawler to fetch contributors info for a set of Wiki pages. MapReduce
 
 Build Instructions
 ------------------
+
 1. First, compile and run the web crawler as a normal Java program to download contributors info into a folder called CrawledContent.
+	
+
+		java Crawler http://en.wikipedia.org/wiki/Hadoop <max_depth_to_visit> <max_urls_to_collect_per_page> <max_threads_running_at_once> ./CrawledContent
 
 2. To run MapReduce job:
 
